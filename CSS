@@ -1,0 +1,62 @@
+CSS:
+CSS(Cascading Style Sheets) is used to style and lay out web pages.
+
+To link styles.css to index.html add the following line inside the <head> of the HTML document.
+<link rel="stylesheet" href="styles.css">
+
+Applying CSS to HTML:
+
+External stylesheet:An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful method of bringing CSS to a document.
+Internal stylesheet:An internal stylesheet resides within an HTML document. To create an internal stylesheet, you place CSS inside a <style> element contained inside the HTML <head>.
+
+Inline styles:
+Inline styles are CSS declarations that affect a single HTML element, contained within a style attribute.
+
+Properties and values:
+Properties: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size, width, background-color.
+Values: Each property is assigned a value. This value indicates how to style the property.
+
+CSS properties and values are case-sensitive. The property and value in each pair are separated by a colon.
+
+Combining selectors and combinators:
+
+Functions:
+While most values are relatively simple keywords or numeric values, there are some values that take the form of a function.
+
+Shorthands:
+Some properties like font, background, padding, border, and margin are called shorthand properties. This is because shorthand properties set several values in a single line.
+
+Comments:A CSS comment is used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the style sheet.CSS comments begin with /* and end with */.
+
+@rules:CSS @rules (pronounced "at-rules") provide instruction for what CSS should perform or how it should behave. Some @rules are simple with just a keyword and a value.
+
+Selectors:A selector targets HTML to apply styles to content. If CSS is not applying to content as expected, your selector may not match the way you think it should match.
+
+White space:White space means actual spaces, tabs and new lines. Just as browsers ignore white space in HTML, browsers ignore white space inside CSS. The value of white space is how it can improve readability.
+
+DOM:A DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings.
+
+Flexbox:Flexbox is the short name for the Flexible Box Layout CSS module, designed to make it easy for us to lay things out in one dimension — either as a row or as a column. To use flexbox, you apply display: flex to the parent element of the elements you want to lay out.
+
+Floats:Floating an element changes the behavior of that element and the block level elements that follow it in normal flow. The floated element is moved to the left or right and removed from normal flow, and the surrounding content floats around it.
+
+Grids:A grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements. They help us to create layouts in which our elements won't jump around or change width as we move from page to page, providing greater consistency on our websites.
+
+Positioning techniques:
+Static positioning:Static positioning is the default that every element gets.
+Relative positioning:Relative positioning allows you to modify an element's position on the page, moving it relative to its position in normal flow, as well as making it overlap other elements on the page.
+Absolute positioning:Absolute positioning moves an element completely out of the page's normal layout flow, like it's sitting on its own separate layer. 
+rowser viewport, not another element.
+Sticky positioning:Sticky positioning is a newer positioning method that makes an element act like position static until it hits a defined offset from the viewport, at which point it acts like position: fixed.
+
+
+How does CSS actually work?
+
+1. The browser loads the HTML.
+2. It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory.
+3. The browser then fetches most of the resources that are linked to by the HTML document.
+4. The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets". Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required
+5. The render tree is laid out in the structure it should appear in after the rules have been applied to it.
+6. The visual display of the page is shown on the screen
+
+
